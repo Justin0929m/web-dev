@@ -1,0 +1,166 @@
+body, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* NavBar Styling start */
+
+.navbar{
+    list-style: none;
+    background-color: white;
+    height: 8vh;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: black;
+    float: right;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* NavBar Styling end */
+
+/* Hero img styling start */
+
+.img-header{
+    width: 100%;
+}
+
+.header-text{
+    z-index: 1000;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 400%;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+/* Hero img styling end */
+
+.about-me{
+    display: flex;
+    margin: 10% 10%;
+}
+
+.about-me-sec{
+    margin: 0 auto;
+    width: 90%;
+    line-height: 1.5;
+}
+
+.about-me-img{
+    width: 40%;
+    padding-right: 10%;
+}
+
+.sec-2{
+    background-color: coral;
+    height: 100vh;
+}
+
+.sec-2 > h1{
+    font-size: 200px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.img-1{
+    width: 35%;
+    padding-right: 10px;
+    margin-bottom: 10%;
+}
+
+.flex{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+footer{
+    height: 10vh;
+    background-color: teal;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+footer ul li{
+    float: left;
+    margin: 10px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.photos{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.photo{
+    width: 25%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .nav{
+        margin: 0 auto;
+    }
+
+    .navbar{
+        /* width: 100%; */
+        height: 0;
+        padding-right: 6%;
+    }
+
+    .nav-links{
+        padding: 0;
+    }
+
+    .header-text{
+        font-size: 10px;
+        position: absolute;
+        top: 15%;
+        font-size: 20px;
+    }
+
+    .about-me-img{
+        display: none;
+    }
+
+    .sec-2{
+        height: 100vh;
+    }
+
+    .sec-2 > h1{
+        font-size: 150px;
+    }
+
+    .sec-text{
+        padding: 10px;
+    }
+
+    .flex{
+        display: inline;
+    }
+
+    .img-1{
+        display: none;
+    }
+}
